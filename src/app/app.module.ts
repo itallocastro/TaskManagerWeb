@@ -7,12 +7,15 @@ import { NgxEditorModule } from 'ngx-editor';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import {HttpClientModule} from '@angular/common/http';
 import { EditorTextComponent } from './editor-text/editor-text.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { RoutingModule } from './routing/routing.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    EditorTextComponent
+    EditorTextComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -20,6 +23,7 @@ import { EditorTextComponent } from './editor-text/editor-text.component';
     FormsModule,
     AngularFontAwesomeModule,
     HttpClientModule,
+    RoutingModule
 
   ],
   providers: [],
